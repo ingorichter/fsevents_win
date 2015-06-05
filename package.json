@@ -1,0 +1,38 @@
+{
+  "name": "fsevents",
+  "version": "0.1.0",
+  "description": "Native Access to Windows Filesystem Events",
+  "main": "fsevents.js",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^1.8.4"
+  },
+  "os": [
+    "windows"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "export PATH=$PATH:`pwd`/node_nodules/.bin/ && tap ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ingorichter/fsevents_win.git"
+  },
+  "keywords": [
+    "fsevents",
+    "win"
+  ],
+  "author": "Ingo Richter <ingo.richter+github@gmail.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/ingorichter/fsevents_win/issues"
+  },
+  "homepage": "https://github.com/ingorichter/fsevents_win",
+  "devDependencies": {
+    "tap": "~1.2.0"
+  }
+}
